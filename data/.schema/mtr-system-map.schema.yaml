@@ -1,6 +1,5 @@
 # yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
 
-$schema: https://json-schema.org/draft/2020-12/schema
 properties:
   color_names:
     description: Maps color names to RGB values
@@ -23,7 +22,7 @@ properties:
             description: Line name
             type: string
           color:
-            $ref: ./color.schema.yaml#/$defs/color # Recommended: use YAML anchors to reference color names
+            $ref: ./color.schema.yaml#/$defs/color_ref
         required:
           - full_name
           - color
@@ -42,7 +41,7 @@ properties:
             description: Map element name
             type: string
           color:
-            $ref: ./color.schema.yaml#/$defs/color # Recommended: use YAML anchors to reference color names
+            $ref: ./color.schema.yaml#/$defs/color_ref
         required:
           - name
           - color

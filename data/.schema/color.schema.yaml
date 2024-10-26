@@ -25,3 +25,13 @@ $defs:
       - name
       - rgb
     additionalProperties: false
+
+  color_ref:
+    description: Color reference
+    type: object
+    properties:
+      $ref:
+        type: string
+    required:
+      - $ref
+    additionalProperties: false

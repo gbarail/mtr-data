@@ -4,83 +4,81 @@
 # Source: https://esearch.ipd.gov.hk/
 # Trade mark number: 303009096
 
-!!omap
-
-color_names:
+color_names: !!omap
   # Basic colors
-  black: &black
+  black:
     name: black
     rgb: [0, 0, 0]
-  white: &white
+  white:
     name: white
     rgb: [255, 255, 255]
 
   # Pantone colors
-  blue: &blue
+  blue:
     name: blue
     pantone: 2915C
     rgb: [98, 181, 229]
-  dark_blue: &dark_blue
+  dark_blue:
     name: dark blue
     pantone: 539C
     rgb: [0, 38, 58]
-  dark_green: &dark_green
+  dark_green:
     name: dark green
     pantone: 322C
     rgb: [0, 115, 119]
-  dark_grey: &dark_grey
+  dark_grey:
     name: dark grey
     pantone: 430C
     rgb: [124, 135, 142]
-  gold: &gold
+  gold:
     name: gold
     pantone: 117C
     rgb: [201, 151, 0]
-  goldenrod: &goldenrod
+  goldenrod:
     name: goldenrod
     pantone: 174C
     rgb: [150, 56, 33]
-  green: &green
+  green:
     name: green
     pantone: 354C
     rgb: [0, 177, 64]
-  grey: &grey
+  grey:
     name: grey
     pantone: 429C
     rgb: [162, 170, 173]
-  light_blue: &light_blue
+  light_blue:
     name: light blue
     pantone: 2975C
     rgb: [153, 214, 234]
-  light_green: &light_green
+  light_green:
     name: light green
     pantone: 390C
     rgb: [181, 189, 0]
-  light_grey: &light_grey
+  light_grey:
     name: light grey
     pantone: 427C
     rgb: [208, 211, 212]
-  magenta: &magenta
+  magenta:
     name: magenta
     pantone: 2405C
     rgb: [176, 0, 142]
-  ocean_blue: &ocean_blue
+  ocean_blue:
     name: ocean blue
     pantone: 285C
     rgb: [0, 114, 206]
-  orange: &orange
+  orange:
     name: orange
     pantone: 144C
     rgb: [237, 139, 0]
-  pink: &pink
+  pink:
     name: pink
     pantone: 2375C
     rgb: [226, 119, 205]
-  purple: &purple
+  purple:
     name: purple
     pantone: 2583C
     rgb: [160, 94, 181]
-  red: &red
+  red:
     name: red
     pantone: 485C
     rgb: [218, 41, 28]
@@ -89,73 +87,94 @@ lines_colors: !!omap
   # Current lines
   AEL:
     full_name: Airport Express
-    color: *dark_green
+    color:
+      $ref: '#/color_names/dark_green'
   DRL:
     full_name: Disneyland Resort Line
-    color: *pink
+    color:
+      $ref: '#/color_names/pink'
   EAL:
     full_name: East Rail Line
-    color: *blue
+    color:
+      $ref: '#/color_names/blue'
   HSR:
     full_name: High Speed Rail
-    color: *dark_grey
+    color:
+      $ref: '#/color_names/dark_grey'
   ISL:
     full_name: Island Line
-    color: *ocean_blue
+    color:
+      $ref: '#/color_names/ocean_blue'
   KTL:
     full_name: Kwun Tong Line
-    color: *green
+    color:
+      $ref: '#/color_names/green'
   LRT:
     full_name: Light Rail
-    color: *gold
+    color:
+      $ref: '#/color_names/gold'
   SIL:
     full_name: South Island Line
-    color: *light_green
+    color:
+      $ref: '#/color_names/light_green'
   TCL:
     full_name: Tung Chung Line
-    color: *orange
+    color:
+      $ref: '#/color_names/orange'
   TKL:
     full_name: Tseung Kwan O Line
-    color: *purple
+    color:
+      $ref: '#/color_names/purple'
   TML:
     full_name: Tuen Ma Line
-    color: *goldenrod
+    color:
+      $ref: '#/color_names/goldenrod'
   TWL:
     full_name: Tsuen Wan Line
-    color: *red
+    color:
+      $ref: '#/color_names/red'
 
   # Former lines
   MOL:
     full_name: (Former) Ma On Shan Line
-    color: *goldenrod
+    color:
+      $ref: '#/color_names/goldenrod'
   WRL:
     full_name: (Former) West Rail Line
-    color: *magenta
+    color:
+      $ref: '#/color_names/magenta'
 
 miscellaneous_colors: !!omap
   # Basic elements
   background:
     name: Background
-    color: *white
+    color:
+      $ref: '#/color_names/white'
   text:
     name: Text
-    color: *black
+    color:
+      $ref: '#/color_names/black'
   header_background:
     name: Header background
-    color: *dark_blue
+    color:
+      $ref: '#/color_names/dark_blue'
 
   # Nature
   land:
     name: Land
-    color: *white
+    color:
+      $ref: '#/color_names/white'
   sea_water:
     name: Sea water
-    color: *light_blue
+    color:
+      $ref: '#/color_names/light_blue'
 
   # Shenzhen Metro
   szl:
     name: Shenzhen land
-    color: *light_grey
+    color:
+      $ref: '#/color_names/light_grey'
   szm:
     name: Shenzhen Metro Network
-    color: *grey
+    color:
+      $ref: '#/color_names/grey'

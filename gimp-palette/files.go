@@ -9,7 +9,7 @@ import (
 
 var (
 	_, file, _, _ = runtime.Caller(0)
-	dataDir       = path.Join(path.Dir(file), "..", "data")
+	dataDir       = path.Join(path.Dir(file), "..", "data", "colors")
 )
 
 var (

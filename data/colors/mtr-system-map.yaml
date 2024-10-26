@@ -1,10 +1,12 @@
-# yaml-language-server: $schema=./.schema/mtr-system-map.schema.yaml
+# yaml-language-server: $schema=../.schema/mtr-system-map.schema.yaml
 
 # MTR System Map colors
 # Source: https://esearch.ipd.gov.hk/
 # Trade mark number: 303009096
 
-color_names: !!omap
+!!omap
+
+color_names:
   # Basic colors
   black: &black
     name: black

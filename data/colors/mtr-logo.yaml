@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=./.schema/mtr-logo.schema.yaml
+# yaml-language-server: $schema=../.schema/mtr-logo.schema.yaml
 
 # MTR logo colors
 # Source: https://esearch.ipd.gov.hk/

@@ -119,7 +119,7 @@ lines_colors: !!omap
     full_name: Tuen Ma Line
     color: *goldenrod
   TWL:
-    full_name: Tswen Wan Line
+    full_name: Tsuen Wan Line
     color: *red
 
   # Former lines

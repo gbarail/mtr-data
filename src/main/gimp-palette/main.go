@@ -24,10 +24,12 @@ type MTRSystemMapColors struct {
 	MiscellaneousColors map[string]ColorItem `yaml:"miscellaneous_colors"`
 }
 
+type RGB [3]uint8
+
 type Color struct {
-	Name    string   `yaml:"name"`
-	Pantone string   `yaml:"pantone,omitempty"`
-	RGB     [3]uint8 `yaml:"rgb"`
+	Name    string `yaml:"name"`
+	Pantone string `yaml:"pantone,omitempty"`
+	RGB     `yaml:"rgb"`
 }
 
 type ColorItem struct {
@@ -37,6 +39,7 @@ type ColorItem struct {
 
 type ColorRef struct {
 	Ref string `yaml:"$ref"`
+	*Color
 }
 
 func main() {
@@ -54,4 +57,6 @@ func main() {
 		fmt.Fprintln(os.Stderr, err.Error())
 		return
 	}
+
+	fmt.Printf("%+v\n", data)
 }

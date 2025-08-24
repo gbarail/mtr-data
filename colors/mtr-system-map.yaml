@@ -1,0 +1,164 @@
+# yaml-language-server: $schema=../.schema/colors.schema.yaml
+
+# MTR System Map colors
+# Source: https://esearch.ipd.gov.hk/
+# Type: Trade Mark
+# Trade mark number: 303009096
+# Link: https://esearch.ipd.gov.hk/nis-pos-view/#/tm/details/view/366322_303009096/0/0/1/10/0/1/0/null_null/KCFeIShhcHBsaWNhdGlvbk51bWJlcjooMzAzMDA5MDk2KSkhXiEgQU5EICFeIShpc0RlYWRSZWNvcmRJbmRpY2F0b3I6KGZhbHNlKSkhXiEpIEFORCB0bVJlY29yZFNlcTox?lang=en
+
+---
+
+name: MTR System Map Colors
+
+defs:
+  black:
+    name: Black
+    rgb: &black [0, 0, 0]
+  white:
+    name: White
+    rgb: &white [255, 255, 255]
+
+  blue:
+    name: blue
+    pantone: 2915C
+    rgb: &blue [98, 181, 229]
+  dark_blue:
+    name: dark blue
+    pantone: 539C
+    rgb: &dark_blue [0, 38, 58]
+  dark_green:
+    name: dark green
+    pantone: 322C
+    rgb: &dark_green [0, 115, 119]
+  dark_grey:
+    name: dark grey
+    pantone: 430C
+    rgb: &dark_grey [124, 135, 142]
+  gold:
+    name: gold
+    pantone: 117C
+    rgb: &gold [201, 151, 0]
+  goldenrod:
+    name: goldenrod
+    pantone: 174C
+    rgb: &goldenrod [150, 56, 33]
+  green:
+    name: green
+    pantone: 354C
+    rgb: &green [0, 177, 64]
+  grey:
+    name: grey
+    pantone: 429C
+    rgb: &grey [162, 170, 173]
+  light_blue:
+    name: light blue
+    pantone: 2975C
+    rgb: &light_blue [153, 214, 234]
+  light_green:
+    name: light green
+    pantone: 390C
+    rgb: &light_green [181, 189, 0]
+  light_grey:
+    name: light grey
+    pantone: 427C
+    rgb: &light_grey [208, 211, 212]
+  magenta:
+    name: magenta
+    pantone: 2405C
+    rgb: &magenta [176, 0, 142]
+  ocean_blue:
+    name: ocean blue
+    pantone: 285C
+    rgb: &ocean_blue [0, 114, 206]
+  orange:
+    name: orange
+    pantone: 144C
+    rgb: &orange [237, 139, 0]
+  pink:
+    name: pink
+    pantone: 2375C
+    rgb: &pink [226, 119, 205]
+  purple:
+    name: purple
+    pantone: 2583C
+    rgb: &purple [160, 94, 181]
+  red:
+    name: red
+    pantone: 485C
+    rgb: &red [218, 41, 28]
+
+colors:
+  # Basic colors
+  black:
+    name: Black
+    color: *black
+  white:
+    name: White
+    color: *white
+
+  # Current lines
+  AEL:
+    name: Airport Express
+    color: *dark_green
+  DRL:
+    name: Disneyland Resort Line
+    color: *pink
+  EAL:
+    name: East Rail Line
+    color: *blue
+  HSR:
+    name: High Speed Rail
+    color: *dark_grey
+  ISL:
+    name: Island Line
+    color: *ocean_blue
+  KTL:
+    name: Kwun Tong Line
+    color: *green
+  LRT:
+    name: Light Rail
+    color: *gold
+  SIL:
+    name: South Island Line
+    color: *light_green
+  TCL:
+    name: Tung Chung Line
+    color: *orange
+  TKL:
+    name: Tseung Kwan O Line
+    color: *purple
+  TML:
+    name: Tuen Ma Line
+    color: *goldenrod
+  TWL:
+    name: Tsuen Wan Line
+    color: *red
+
+  # Former lines
+  MOL:
+    name: (Former) Ma On Shan Line
+    color: *goldenrod
+  WRL:
+    name: (Former) West Rail Line
+    color: *magenta
+
+  # System map elements
+  header_background:
+    name: Header background
+    color: *dark_blue
+
+  # Nature
+  land:
+    name: Land
+    color: *white
+  sea_water:
+    name: Sea water
+    color: *light_blue
+
+  # Shenzhen Metro
+  shenzhen:
+    name: Shenzhen land area
+    color: *light_grey
+  shenzhen_metro:
+    name: Shenzhen Metro Network
+    color: *grey

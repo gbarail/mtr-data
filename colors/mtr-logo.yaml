@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=../.schema/colors.schema.yaml
+
+# MTR logo colors
+# Source: https://esearch.ipd.gov.hk/
+# Trade mark number: 301043423
+
+---
+
+name: MTR logo colors
+
+defs:
+  red:
+    name: MTR logo red
+    pantone: PMS 201C
+    rgb: &red [157, 34, 53]
+  white:
+    name: MTR logo white
+    rgb: &white [255, 255, 255]
+  blue:
+    name: MTR logo blue
+    pantone: PMS 539C
+    rgb: &blue [0, 38, 58]
+
+colors:
+  red:
+    name: MTR Red
+    color: *red
+  white:
+    name: MTR White
+    color: *white
+  blue:
+    name: MTR Blue
+    color: *blue

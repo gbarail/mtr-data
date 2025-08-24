@@ -1,0 +1,67 @@
+# yaml-language-server: $schema=https://json-schema.org/draft/2020-12/schema
+
+$schema: https://json-schema.org/draft/2020-12/schema
+
+$defs:
+  color_value:
+    oneOf:
+      - $ref: '#/$defs/color_obj'
+      - $ref: '#/$defs/color_rgb'
+
+  color_obj:
+    description: Color
+    type: object
+    properties:
+      name:
+        description: Color name
+        type: string
+      pantone:
+        description: Pantone color code
+        type: string
+      rgb:
+        $ref: '#/$defs/color_rgb'
+    required:
+      - name
+      - rgb
+    additionalProperties: false
+
+  color_rgb:
+    description: RGB values
+    type: array
+    items:
+      type: integer
+      minimum: 0
+      maximum: 255
+    minItems: 3
+    maxItems: 3
+
+type: object
+properties:
+  name:
+    description: Color set name
+    type: string
+  defs:
+    description: Color definitions
+    type: object
+    patternProperties:
+      ^[A-Za-z_][A-Za-z0-9_]*$:
+        description: Color definitions
+        $ref: '#/$defs/color_value'
+    additionalProperties: false
+  colors:
+    description: Colors
+    type: object
+    patternProperties:
+      ^[A-Za-z_][A-Za-z0-9_]*$:
+        description: Color names and values
+        type: object
+        properties:
+          name:
+            description: Color name
+            type: string
+          color:
+            description: Color value
+            $ref: '#/$defs/color_rgb'
+        additionalProperties: false
+    additionalProperties: false
+additionalProperties: false

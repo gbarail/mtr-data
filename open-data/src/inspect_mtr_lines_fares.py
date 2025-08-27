@@ -8,15 +8,17 @@ data_file = CURDIR.parent / "data" / \
 
 
 def mtr_stations(df: pd.DataFrame):
-    return df['SRC_STATION_NAME'].nunique()
+    return df["SRC_STATION_NAME"].nunique()
 
 
 def mtr_fare_stats(df: pd.DataFrame, key: str):
     data = df[df[key] != 0][key]  # Remove costs that are zero
     return {
-        'mean': data.mean(),
-        'median': data.median(),
-        'standard_deviation': data.std(),
+        "min": data.min(),
+        "max": data.max(),
+        "mean": data.mean(),
+        "median": data.median(),
+        "standard_deviation": data.std(),
     }
 
 

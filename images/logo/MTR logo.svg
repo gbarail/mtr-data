@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 64 64.000003"
+   version="1.1"
+   id="svg493"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01, custom)"
+   sodipodi:docname="MTR logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview495"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="3.3638608"
+     inkscape:cx="157.55705"
+     inkscape:cy="93.345122"
+     inkscape:window-width="1605"
+     inkscape:window-height="986"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs490" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g711"
+       transform="translate(5.8395806,-13.780726)">
+      <g
+         id="g192"
+         transform="matrix(1.3333333,0,0,-1.3333333,-4.8329132,45.798059)">
+        <path
+           d="m 0,0 c 0,-8.056 5.354,-14.962 12.96,-17.839 3.134,-1.097 6.618,-1.705 10.283,-1.705 3.648,0 7.11,0.608 10.234,1.698 l 0.01,-0.009 C 41.111,-14.984 46.49,-8.076 46.49,0 v 0.031 c 0,8.074 -5.379,14.988 -13.003,17.854 l -0.01,-0.005 c -3.124,1.086 -6.586,1.69 -10.234,1.69 -3.665,0 -7.149,-0.604 -10.283,-1.702 C 5.354,14.991 0,8.086 0,0.031 Z"
+           style="fill:#af1d3b;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path194" />
+      </g>
+      <g
+         id="g196"
+         transform="matrix(1.3333333,0,0,-1.3333333,23.253753,48.084459)">
+        <path
+           d="m 0,0 c -5.192,-0.806 -9.212,-5.149 -9.507,-10.483 l 4.181,-0.006 c 0.19,3.187 2.421,5.827 5.41,6.62 v -7.49 h 4.193 v 7.49 c 2.986,-0.793 5.219,-3.433 5.406,-6.62 l 4.19,0.006 C 13.564,-5.149 9.55,-0.806 4.363,0 v 3.46 c 5.187,0.809 9.201,5.15 9.51,10.487 H 9.683 C 9.496,10.76 7.263,8.126 4.277,7.33 v 7.49 H 0.084 V 7.33 c -2.989,0.796 -5.22,3.43 -5.41,6.617 H -9.507 C -9.212,8.61 -5.192,4.269 0,3.46 Z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path198" />
+      </g>
+    </g>
+  </g>
+</svg>
